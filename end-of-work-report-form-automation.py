@@ -6,16 +6,7 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.common.keys import Keys
 
-# chromedriver.exeのパスを指定
-chromedriver_path = 'C:/chromedriver-win64/chromedriver.exe'
-
-# chromedriverのサービスを作成
-service = Service(chromedriver_path)
-
-# クロームの立ち上げ
-driver = webdriver.Chrome(service=service)
-
-# 以降のコードを続けて実行
+driver = browser = webdriver.Chrome()
 
 #ページ接続
 driver.get('https://forms.office.com/Pages/ResponsePage.aspx?id=s-m8E43DZEe2NiaVXDtXUM9WON_2Pv5IjKCEOnldEFtUNUtOV0dSNUJIUkFURlVaT1FIQkdFMzM0NCQlQCN0PWcu')

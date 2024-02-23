@@ -7,16 +7,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import time
 
-# chromedriver.exeのパスを指定
-chromedriver_path = 'C:/chromedriver-win64/chromedriver.exe'
-
-# chromedriverのサービスを作成
-service = Service(chromedriver_path)
-
-# クロームの立ち上げ
-driver = webdriver.Chrome(service=service)
-
-# 以降のコードを続けて実行
+driver = browser = webdriver.Chrome()
 
 #ページ接続
 if not jpholiday.is_holiday(datetime.date.today()):
